@@ -1,4 +1,10 @@
 Espowlapp::Application.routes.draw do
+  
+  resources :teachers
+
+  match '/teachers/register',  to: 'teachers#new',    via: 'get'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
